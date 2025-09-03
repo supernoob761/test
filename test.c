@@ -13,6 +13,8 @@ int main() {
     int y=0;
     int high;
     int low;
+    int p;
+    int f;
    while (y!=4)
    {
     printf("Enter a name: ");
@@ -71,7 +73,28 @@ int main() {
     low=sub3;
     else (sub4<sub2&&sub4<sub3&&sub4<sub1);
     low = sub4;
-
+    
+    while (0)
+    {
+        if(sub1>50)
+        p+=1;
+        else
+        f+=1;
+        if(sub2>50)
+        p+=1;
+        else
+        f+=1;
+        if(sub3>50)
+        p+=1;
+        else
+        f+=1;
+        if(sub4>50)
+        p+=1;
+        else
+        f+=1;
+        break;
+    }
+    
 
 
 
@@ -92,15 +115,22 @@ int main() {
     printf("\nthe average is : %d",average);
     printf("\nhighest grade : %d",high);
     printf("\nlowest grade : %d",low);
-        if(average<=100)
+    printf("\nsubjects passed : %d",p);
+    printf("\nsubjects failed : %d",f);
+
+    
+    
+    
+    
+    if(average<=100&&average>90)
     printf("\ngrade:A");
-    else if(average<=80)
+    else if(average<=90&&average>80)
     printf("\ngrade:B");
-    else if(average<=70)
+    else if(average<=80&&average>60)
     printf("\ngrade:C");
-    else if(average<=60)
+    else if(average<=60&&average>50)
     printf("\ngrade:D");
-    else(average>=50);
+    else
     printf("\ngrade:F");
     
     if(average>50)
