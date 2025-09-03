@@ -13,8 +13,8 @@ int main() {
     int y=0;
     int high;
     int low;
-    int p;
-    int f;
+    int p=0;
+    int f=0;
    while (y!=4)
    {
     printf("Enter a name: ");
@@ -53,58 +53,26 @@ int main() {
     y+=1;}
 
 }
+    if (sub2 > high) high = sub2;
+    else if (sub3 > high) high = sub3;
+    else (sub4 > high); high = sub4;
+
+
     total=sub1+sub2+sub3+sub4;
     average= total/5;
-    if(sub1>sub2&&sub1>sub3&&sub1>sub4)
-    high=sub1;
-    else if(sub2>sub3&&sub2>sub4&&sub2>sub1)
-    high=sub2;
-    else if(sub3>sub2&&sub3>sub1&&sub3>sub4)
-    high=sub3;
-    else (sub4>sub2&&sub4>sub3&&sub4>sub1);
-    high = sub4;
-    total=sub1+sub2+sub3+sub4;
-    average= total/5;
-    if(sub1<sub2&&sub1<sub3&&sub1<sub4)
-    low=sub1;
-    else if(sub2<sub3&&sub2<sub4&&sub2<sub1)
-    low=sub2;
-    else if(sub3<sub2&&sub3<sub1&&sub3<sub4)
-    low=sub3;
-    else (sub4<sub2&&sub4<sub3&&sub4<sub1);
-    low = sub4;
+   
+   
+    low = sub1;
+    if (sub2 < low) low = sub2;
+    if (sub3 < low) low = sub3;
+    if (sub4 < low) low = sub4;
+
+    printf("The lowest number is: %d\n", low);
     
-    while (0)
-    {
-        if(sub1>50)
-        p+=1;
-        else
-        f+=1;
-        if(sub2>50)
-        p+=1;
-        else
-        f+=1;
-        if(sub3>50)
-        p+=1;
-        else
-        f+=1;
-        if(sub4>50)
-        p+=1;
-        else
-        f+=1;
-        break;
-    }
-    
-
-
-
-
-
-
-
-
-
-
+    if (sub1 > 50) p++; else f++;
+    if (sub2 > 50) p++; else f++;
+    if (sub3 > 50) p++; else f++;
+    if (sub4 > 50) p++; else f++;
 
     printf("Name : %s ", name);
     printf("\nsubject 1 : %d",sub1);
